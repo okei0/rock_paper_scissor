@@ -6,8 +6,8 @@
     <title>Document</title>
     <script>
         function getComputerChoice() {
-            choicesList = ["Rock", "Paper", "Scissors"];
-            randomIndex = Math.floor(Math.random() * 3);
+            let choicesList = ["Rock", "Paper", "Scissors"];
+            let randomIndex = Math.floor(Math.random() * 3);
             return choicesList[randomIndex];
         }
 
@@ -39,8 +39,6 @@
 
         const playerSelection = "rock";
         const computerSelection = getComputerChoice().toLowerCase();
-        console.log(computerSelection);
-        console.log(playerSelection);
         console.log(playRound(playerSelection, computerSelection));
     </script>
 </head>
